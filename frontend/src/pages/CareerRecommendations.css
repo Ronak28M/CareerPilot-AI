@@ -1,0 +1,109 @@
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.next-action-banner {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.next-action-banner span { font-size: 20px; flex-shrink: 0; }
+.next-action-banner strong { display: block; margin-bottom: 2px; }
+.next-action-banner p { color: var(--text-muted); margin: 0; }
+
+.career-cards { display: flex; flex-direction: column; gap: 20px; }
+
+.career-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+}
+.career-card-top {
+  border-color: #fbbf24;
+  box-shadow: 0 4px 20px rgba(251,191,36,0.15);
+}
+.top-badge {
+  background: #fef9c3;
+  color: #a16207;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid #fde68a;
+}
+
+.career-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 24px 16px;
+}
+.career-rank-badge {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.career-title-wrap { flex: 1; min-width: 0; }
+.career-name { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+.career-why { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+.match-ring-large {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  border: 4px solid;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.career-card-body {
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.career-section h3 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.career-sections-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.career-list {
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+.career-list li { color: var(--text); }
+.career-steps li::marker { color: var(--primary); font-weight: 700; }
+
+@media (max-width: 600px) {
+  .career-sections-row { grid-template-columns: 1fr; }
+  .career-card-header { flex-wrap: wrap; }
+}

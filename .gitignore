@@ -1,0 +1,23 @@
+# Credentials and secrets
+backend/.env
+**/.env
+**/*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+env/
+.venv/
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
